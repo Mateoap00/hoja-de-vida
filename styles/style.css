@@ -1,0 +1,182 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #0d1b2a;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #0d1b2a
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #0d1b2a;
+}
+
+li,
+p {
+    font-size: 1rem;
+}
+
+.titleSection {
+    background-color: #fffcf2;
+    color: #0d1b2a;
+    border: 0.15rem solid;
+    border-color: #0d1b2a;
+}
+
+.mainTitle,
+.fullName,
+.profession {
+    text-align: center;
+}
+
+.moreInfo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.profilePhoto {
+    margin: auto;
+    margin-left: 2rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: #0d1b2a;
+}
+
+.contactInfo {
+    margin: auto;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    color: #0d1b2a;
+}
+
+.contactInfoItem {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contactIcons {
+    margin-right: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+hr {
+    height: 0.15rem;
+    background-color: #0d1b2a;
+}
+
+.columnContainer {
+    display: flex;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 0 2rem;
+}
+
+.socials {
+    margin: auto;
+    width: 25rem;
+    border: 0.15rem solid;
+    border-radius: 10px;
+    border-color: #0d1b2a;
+    background-color: #ede0d4;
+}
+
+.findMeTitle {
+    text-align: center;
+}
+
+.socialPhotos {
+    display: flex;
+    justify-content: center;
+}
+
+.socialPhoto {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem;
+}
+
+.githubContainer,
+.facebookContainer,
+.twitterContainer {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem;
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.githubContainer {
+    background-image: url(../imgs/github-logo.png);
+}
+
+.facebookContainer {
+    background-image: url(../imgs/face-logo.png);
+}
+
+.twitterContainer {
+    background-image: url(../imgs/twitter-logo.png);
+}
+
+.githubContainer:hover,
+.facebookContainer:hover,
+.twitterContainer:hover {
+    cursor: pointer;
+}
+
+.githubContainer:hover {
+    background-image: url(../imgs/github-white-logo.png);
+}
+
+.twitterContainer:hover {
+    background-image: url(../imgs/twitter-white-logo.png);
+}
+
+.facebookContainer:hover {
+    background-image: url(../imgs/face-white-logo.png);
+}
+
+.redParagraph {
+    color: #e76f51;
+}
+
+.blueParagraph {
+    color: #669bbc;
+}
+
+#uniqueParagraph {
+    color: #354f52;
+    border: 3px dotted;
+    padding: 3rem;
+    margin: 5rem;
+}
+
+#container {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 0.1rem solid;
+}
+
+.article {
+    width: 200px;
+    margin: 1rem;
+    border: 0.1rem solid;
+}
