@@ -77,13 +77,16 @@ hr {
 }
 
 .columnContainer {
-    display: flex;
+    display: grid;
+    gap: 5rem;
+    row-gap: 0.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .column {
-    width: 50%;
-    float: left;
-    padding: 0 2rem;
+    text-align: justify;
 }
 
 .socials {
@@ -148,35 +151,4 @@ hr {
 
 .facebookContainer:hover {
     background-image: url(../imgs/face-white-logo.png);
-}
-
-.redParagraph {
-    color: #e76f51;
-}
-
-.blueParagraph {
-    color: #669bbc;
-}
-
-#uniqueParagraph {
-    color: #354f52;
-    border: 3px dotted;
-    padding: 3rem;
-    margin: 5rem;
-}
-
-#container {
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    border: 0.1rem solid;
-}
-
-.article {
-    width: 200px;
-    margin: 1rem;
-    border: 0.1rem solid;
 }
