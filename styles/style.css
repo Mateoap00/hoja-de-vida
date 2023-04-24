@@ -12,11 +12,11 @@ body {
 
 .titleSection {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    background-color: #fffcf2;
-    color: #0d1b2a;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    background-color: #adb5bd;
+    color: #000;
     border: 0.15rem solid;
-    border-color: #0d1b2a;
+    border-color: #000;
 }
 
 .titles {
@@ -40,8 +40,8 @@ body {
     max-width: 12rem;
     max-height: 12rem;
     border-radius: 50%;
-    border: 4px solid;
-    border-color: #0d1b2a;
+    border: 0.15rem solid;
+    border-color: #000;
 }
 
 .contactInfo {
@@ -50,32 +50,47 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
-    color: #0d1b2a;
+    color: #000;
 
 }
 
 .contactInfoItem {
     display: flex;
     text-align: center;
+    align-items: center;
     justify-content: center;
 }
 
 .contactIcons {
-    margin-right: 0.5rem;
-    max-width: 3rem;
-    max-height: 3rem;
+    margin-right: 0.25rem;
+    max-width: 2rem;
+    max-height: 2rem;
 }
 
 .categoriesContainer {
     display: grid;
-    margin: auto;
-    gap: 5rem;
-    row-gap: 0.25rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 .category {
     text-align: justify;
+}
+
+.category h3 {
+    text-align: center;
+}
+
+.category:nth-child(odd) {
+    background-color: #ced4da;
+}
+
+.category:nth-child(even) {
+    background-color: #dee2e6;
+}
+
+.category ul li p {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 .socials {
@@ -84,8 +99,8 @@ body {
     max-width: 25rem;
     border: 0.15rem solid;
     border-radius: 10px;
-    border-color: #0d1b2a;
-    background-color: #ede0d4;
+    border-color: #000;
+    background-color: #e9ecef;
 }
 
 .findMeTitle {
@@ -104,8 +119,9 @@ body {
 }
 
 .githubContainer,
-.facebookContainer,
-.twitterContainer {
+.linkedinContainer,
+.twitterContainer,
+.whatsappContainer {
     width: 4rem;
     height: 4rem;
     margin: 0.5rem;
@@ -114,48 +130,62 @@ body {
 }
 
 .githubContainer {
-    background-image: url(../imgs/github-logo.png);
+    background-image: url(../imgs/github-black-png.png);
 }
 
-.facebookContainer {
-    background-image: url(../imgs/face-logo.png);
+.linkedinContainer {
+    background-image: url(../imgs/linkedin-black-svg.svg);
 }
 
 .twitterContainer {
-    background-image: url(../imgs/twitter-logo.png);
+    background-image: url(../imgs/twitter-black-svg.svg);
+}
+
+.whatsappContainer {
+    background-image: url(../imgs/whatsapp-black-svg.svg);
 }
 
 .githubContainer:hover,
-.facebookContainer:hover,
-.twitterContainer:hover {
+.linkedinContainer:hover,
+.twitterContainer:hover,
+.whatsappContainer:hover {
     cursor: pointer;
 }
 
 .githubContainer:hover {
-    background-image: url(../imgs/github-white-logo.png);
+    background-image: url(../imgs/github-white-png.png);
 }
 
 .twitterContainer:hover {
-    background-image: url(../imgs/twitter-white-logo.png);
+    background-image: url(../imgs/twitter-white-svg.svg);
 }
 
-.facebookContainer:hover {
-    background-image: url(../imgs/face-white-logo.png);
+.linkedinContainer:hover {
+    background-image: url(../imgs/linkedin-white-svg.svg);
+}
+
+.whatsappContainer:hover {
+    background-image: url(../imgs/whatsapp-white-svg.svg);
 }
 
 h1 {
     font-size: 2rem;
-    color: #0d1b2a;
+    color: #000;
 }
 
 h2 {
     font-size: 1.5rem;
-    color: #0d1b2a
+    color: #000
 }
 
 h3 {
     font-size: 1.25rem;
-    color: #0d1b2a;
+    color: #000;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #000;
 }
 
 li,
@@ -165,5 +195,5 @@ p {
 
 hr {
     height: 0.15rem;
-    background-color: #0d1b2a;
+    background-color: #000;
 }
