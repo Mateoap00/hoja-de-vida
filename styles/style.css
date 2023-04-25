@@ -93,18 +93,24 @@ body {
     margin-bottom: 0.25rem;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    text-align: center;
+}
+
+.contactMeTitles {
+    text-align: center;
+}
+
 .socials {
     margin: auto;
     min-width: 15rem;
     max-width: 25rem;
     border: 0.15rem solid;
-    border-radius: 10px;
+    border-radius: 0.25rem;
     border-color: #000;
     background-color: #e9ecef;
-}
-
-.findMeTitle {
-    text-align: center;
 }
 
 .socialPhotos {
@@ -120,8 +126,7 @@ body {
 
 .githubContainer,
 .linkedinContainer,
-.twitterContainer,
-.whatsappContainer {
+.twitterContainer {
     width: 4rem;
     height: 4rem;
     margin: 0.5rem;
@@ -141,14 +146,9 @@ body {
     background-image: url(../imgs/twitter-black-svg.svg);
 }
 
-.whatsappContainer {
-    background-image: url(../imgs/whatsapp-black-svg.svg);
-}
-
 .githubContainer:hover,
 .linkedinContainer:hover,
-.twitterContainer:hover,
-.whatsappContainer:hover {
+.twitterContainer:hover {
     cursor: pointer;
 }
 
@@ -164,8 +164,54 @@ body {
     background-image: url(../imgs/linkedin-white-svg.svg);
 }
 
-.whatsappContainer:hover {
-    background-image: url(../imgs/whatsapp-white-svg.svg);
+.emailForm {
+    margin: auto;
+    text-align: center;
+    min-width: 15rem;
+    max-width: 25rem;
+    border: 0.15rem solid;
+    border-radius: 0.25rem;
+    border-color: #000;
+    background-color: #e9ecef;
+}
+
+.resultSuccess {
+    color: #588157;
+}
+
+.resultFailure {
+    color: #ef233c;
+}
+
+#inputsInfo {
+    font-size: 0.75rem;
+}
+
+.emailForm #form label {
+    display: block;
+    font-size: 1rem;
+}
+
+.emailForm #form input,
+.emailForm #form textarea {
+    min-width: 15rem;
+}
+
+.emailForm #form textarea {
+    min-height: 10rem;
+}
+
+.emailForm #form button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: #000;
+    color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.emailForm #form button:hover {
+    cursor: pointer;
 }
 
 h1 {

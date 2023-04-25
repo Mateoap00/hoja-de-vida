@@ -23,15 +23,15 @@
             </div>
             <div class="contactInfo">
                 <div class="contactInfoItem">
-                    <img class="contactIcons" src="./imgs/phone-svg.svg" alt="Icono de contacto">
-                    <h4>+593984997207</h4>
+                    <img class="contactIcons" src="./imgs/github-black-png.png" alt="Github icon">
+                    <h4>mateoap00</h4>
                 </div>
                 <div class="contactInfoItem">
-                    <img class="contactIcons" src="./imgs/email-svg.svg" alt="Icono de correo electronico">
-                    <h4>mateo.a.p.2000@gmail.com</h4>
+                    <img class="contactIcons" src="./imgs/linkedin-black-svg.svg" alt="Linkedin icon">
+                    <h4>mateoap00</h4>
                 </div>
                 <div class="contactInfoItem">
-                    <img class="contactIcons" src="./imgs/address-svg.svg" alt="Icono de ubicacion">
+                    <img class="contactIcons" src="./imgs/address-svg.svg" alt="Ubication icon">
                     <h4>Cuenca, Azuay, Ecuador</h4>
                 </div>
             </div>
@@ -197,28 +197,70 @@
             <hr>
         </div>
 
-        <div class="socials">
-            <h2 class="findMeTitle">Mis redes sociales!</h2>
-            <div class="socialPhotos">
-                <a href="https://github.com/Mateoap00" target="_blank">
-                    <div class="githubContainer" aria-label="Icono clickeable de github">
+        <footer>
+            <div class="contacts">
+                <h2 class="contactMeTitles">Contáctame!</h2>
+                <div class="socials">
+                    <h3 class="contactMeTitles">Redes Sociales</h3>
+                    <div class="socialPhotos">
+                        <a href="https://github.com/Mateoap00" target="_blank">
+                            <div class="githubContainer" aria-label="Icono clickeable de github">
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mateoap00/" target="_blank">
+                            <div class="linkedinContainer" aria-label="Icono clickeable de linkedlin">
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/MateoAP14" target="_blank">
+                            <div class="twitterContainer" aria-label="Icono clickeable de twitter">
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a href="https://www.linkedin.com/in/mateoap00/" target="_blank">
-                    <div class="linkedinContainer" aria-label="Icono clickeable de linkedlin">
-                    </div>
-                </a>
-                <a href="https://twitter.com/MateoAP14" target="_blank">
-                    <div class="twitterContainer" aria-label="Icono clickeable de twitter">
-                    </div>
-                </a>
-                <a href="https://wa.me/593984997207" target="_blank">
-                    <div class="whatsappContainer" aria-label="Icono clickeable de whatsapp">
-                    </div>
-                </a>
+                </div>
+
+                <div class="emailForm">
+                    <h3 class="contactMeTitles">Escríbeme un correo</h3>
+                    <p id="inputsInfo">Los campos con * son obligatorios</p>
+                    <form id="form" action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="8cb45cf5-38cd-4f18-b8af-efb957446630">
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                        <div class="mb-6">
+                            <label for="nameEmailForm">* Nombre Completo:</label>
+                            <input type="text" name="name" id="nameEmailForm"
+                                placeholder="Escriba aquí su nombre completo..." required>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="atEmailForm">* Correo electrónico:</label>
+                            <input type="email" name="email" id="atEmailForm"
+                                placeholder="Escriba aquí su correo electrónico..." required>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="messageEmailForm">* Mensaje:</label>
+                            <textarea name="message" id="messageEmailForm" placeholder="Escriba aquí un mensaje..."
+                                required></textarea>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="phoneEmailForm">Teléfono:</label>
+                            <input type="text" name="phone" id="phoneEmailForm"
+                                placeholder="Escriba aquí un número de teléfono..." />
+                        </div>
+
+                        <button type="submit">Enviar mensaje</button>
+                        <p id="result"></p>
+
+                    </form>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
+    <!-- Add recaptcha -->
+    <script src="./app.js"></script>
 </body>
 
 </html>
